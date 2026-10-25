@@ -1,6 +1,6 @@
 # GRADE - Grading Risk and Decision Error Disclosure (NTU)
 
-Group project for the **AI Literacy** course at Nanyang Technological University (NTU).
+**Group G** project for **GP8001 AI Literacy** at Nanyang Technological University (NTU).
 
 ## Contributors
 
