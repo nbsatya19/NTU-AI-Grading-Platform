@@ -85,7 +85,7 @@ export default function Header() {
               </AvatarFallback>
             </Avatar>
             <div className="flex flex-col">
-              <span className="text-sm font-medium">Xen</span>
+              <span className="text-sm font-medium">GC Tay Li Min</span>
               <span className="text-xs text-muted-foreground">Instructor</span>
             </div>
           </div>
@@ -107,7 +107,7 @@ export default function Header() {
                   </AvatarFallback>
                 </Avatar>
                 <div className="ml-3">
-                  <div className="font-medium text-lg">Dr. Sarah Chen</div>
+                  <div className="font-medium text-lg">GC Tay Li Min</div>
                   <div className="text-sm text-muted-foreground">NTU Instructor</div>
                 </div>
               </div>

@@ -20,7 +20,7 @@ export default function InstructorDashboard() {
       <section className="space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-3xl font-bold tracking-tight text-balance">Welcome back, Prof. Xen</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-balance">Welcome back, GC Tay Li Min</h1>
             <p className="text-muted-foreground text-lg">
               Manage your courses and assessments with AI-powered grading assistance.
             </p>
