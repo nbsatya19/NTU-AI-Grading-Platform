@@ -1,6 +1,15 @@
 # GRADE - Grading Risk and Decision Error Disclosure (NTU)
 
-Group project for the AI for Literacy course.
+Group project for the **AI Literacy** course at Nanyang Technological University (NTU).
+
+## Contributors
+
+1. Wilfried Ariel Mulyawan (CCDS)
+2. Zheng Guantian (MAE)
+3. Nunna Bhargava Satya (CCDS)
+4. Mantha S. G. Subrahmanyam (SPMS)
+5. Wang Yici (EEE)
+6. Virdika Rizky Utama (SSS)
 
 **Live site: [https://nbsatya19.github.io/NTU-AI-Grading-Platform/](https://nbsatya19.github.io/NTU-AI-Grading-Platform/)**
 
