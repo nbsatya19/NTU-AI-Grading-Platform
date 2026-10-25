@@ -1,0 +1,266 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated to NTU professional color palette */
+    --background: 0 0% 100%; /* White */
+    --foreground: 214 100% 21%; /* NTU Blue #002F6C */
+
+    --card: 0 0% 97%; /* Light Gray #F8F8F8 */
+    --card-foreground: 214 100% 21%; /* NTU Blue */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 214 100% 21%; /* NTU Blue */
+
+    /* NTU Blue Primary */
+    --primary: 214 100% 21%; /* #002F6C */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    /* NTU Red Secondary */
+    --secondary: 350 85% 42%; /* #C8102E */
+    --secondary-foreground: 0 0% 100%; /* White */
+
+    /* Professional Gray Muted */
+    --muted: 0 0% 74%; /* #BDBDBD */
+    --muted-foreground: 214 100% 21%; /* NTU Blue */
+
+    /* Red Accent */
+    --accent: 350 85% 42%; /* #C8102E */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 74%; /* Gray #BDBDBD */
+    --input: 0 0% 97%; /* Light Gray #F8F8F8 */
+    --ring: 214 100% 21% / 0.3; /* NTU Blue with opacity */
+
+    /* Chart colors for analytics */
+    --chart-1: 214 100% 21%; /* NTU Blue */
+    --chart-2: 350 85% 42%; /* NTU Red */
+    --chart-3: 0 0% 74%; /* Gray */
+    --chart-4: 0 0% 97%; /* Light Gray */
+    --chart-5: 0 0% 100%; /* White */
+
+    --radius: 0.5rem; /* Professional corner rounding */
+
+    /* Sidebar colors */
+    --sidebar: 0 0% 97%; /* Light Gray */
+    --sidebar-foreground: 214 100% 21%; /* NTU Blue */
+    --sidebar-primary: 350 85% 42%; /* NTU Red */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 0 0% 74%; /* Gray */
+    --sidebar-accent-foreground: 214 100% 21%; /* NTU Blue */
+    --sidebar-border: 0 0% 74%; /* Gray */
+    --sidebar-ring: 350 85% 42% / 0.3; /* NTU Red with opacity */
+  }
+
+  .dark {
+    --background: 214 100% 8%; /* Dark Blue */
+    --foreground: 0 0% 98%; /* Near White */
+
+    --card: 214 100% 12%; /* Darker Blue */
+    --card-foreground: 0 0% 98%; /* Near White */
+
+    --popover: 214 100% 12%; /* Darker Blue */
+    --popover-foreground: 0 0% 98%; /* Near White */
+
+    --primary: 214 100% 32%; /* Lighter Blue for dark mode */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 350 80% 50%; /* Brighter Red for dark mode */
+    --secondary-foreground: 0 0% 100%; /* White */
+
+    --muted: 214 100% 15%; /* Dark Blue Muted */
+    --muted-foreground: 0 0% 75%; /* Light Gray */
+
+    --accent: 350 80% 50%; /* Brighter Red */
+    --accent-foreground: 0 0% 98%; /* Near White */
+
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 100% 20%; /* Dark Blue Border */
+    --input: 214 100% 15%; /* Dark Blue Input */
+    --ring: 214 100% 32% / 0.3; /* Lighter Blue with opacity */
+
+    --chart-1: 214 100% 40%; /* Lighter Blue */
+    --chart-2: 350 80% 55%; /* Bright Red */
+    --chart-3: 0 0% 60%; /* Medium Gray */
+    --chart-4: 214 100% 20%; /* Dark Blue */
+    --chart-5: 214 100% 25%; /* Medium Blue */
+
+    --sidebar: 214 100% 10%; /* Dark Blue Sidebar */
+    --sidebar-foreground: 0 0% 98%; /* Near White */
+    --sidebar-primary: 350 80% 55%; /* Bright Red */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 214 100% 20%; /* Dark Blue Accent */
+    --sidebar-accent-foreground: 0 0% 98%; /* Near White */
+    --sidebar-border: 214 100% 20%; /* Dark Blue Border */
+    --sidebar-ring: 350 80% 55% / 0.3; /* Bright Red with opacity */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Updated component styles for professional academic interface */
+@layer components {
+  .academic-card {
+    @apply bg-card rounded-lg border shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .academic-button {
+    @apply rounded-md font-medium transition-all active:scale-95 disabled:opacity-50;
+  }
+
+  .academic-input {
+    @apply rounded-md border focus:ring-2 focus:ring-primary/30 focus:border-primary;
+  }
+
+  .academic-badge {
+    @apply rounded-full px-3 py-1 text-xs font-medium;
+  }
+
+  .grading-table {
+    @apply w-full border-collapse;
+  }
+
+  .grading-table th {
+    @apply bg-muted/50 border-b border-border px-4 py-3 text-left font-medium;
+  }
+
+  .grading-table td {
+    @apply border-b border-border px-4 py-3;
+  }
+
+  .grading-table tr:hover {
+    @apply bg-muted/30;
+  }
+
+  .status-badge {
+    @apply inline-flex items-center rounded-full px-2 py-1 text-xs font-medium;
+  }
+
+  .status-needs-review {
+    @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400;
+  }
+
+  .status-approved {
+    @apply bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400;
+  }
+
+  .status-in-progress {
+    @apply bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-400;
+  }
+
+  /* Professional scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  /* Added resizable table functionality like Excel/Google Sheets */
+  .resizable-table-container {
+    @apply relative overflow-x-auto;
+  }
+
+  .resizable-table {
+    @apply table-fixed;
+  }
+
+  .resizable-column {
+    @apply relative;
+  }
+
+  .resize-handle {
+    @apply absolute top-0 right-0 w-1 h-full cursor-col-resize bg-transparent hover:bg-primary/20 transition-colors;
+    z-index: 10;
+  }
+
+  .resize-handle:hover {
+    @apply bg-primary/30;
+  }
+
+  .resize-handle:active {
+    @apply bg-primary/40;
+  }
+
+  .resizable-column:hover .resize-handle {
+    @apply bg-primary/10;
+  }
+
+  /* Ensure table maintains structure during resize */
+  .resizable-table th,
+  .resizable-table td {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap;
+    min-width: 60px;
+    max-width: 500px;
+  }
+
+  /* Visual feedback during column resize */
+  .resizing {
+    @apply select-none;
+  }
+
+  .resizing .resize-handle {
+    @apply bg-primary/50;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .hover-only {
+    display: none;
+  }
+
+  button,
+  a {
+    @apply active:opacity-80 transition-opacity;
+  }
+}
+
+/* Mobile form element optimizations */
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    @apply text-base;
+  }
+
+  button {
+    @apply min-h-[44px];
+  }
+}
+
+/* Accessibility: Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
