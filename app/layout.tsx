@@ -20,7 +20,6 @@ const openSans = Open_Sans({
 export const metadata = {
   title: "GRADE - Grading Risk and Decision Error Disclosure | NTU",
   description: "Sophisticated grading platform for Nanyang Technological University instructors",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
